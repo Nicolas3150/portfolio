@@ -1,9 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faDownload, faClose } from '@fortawesome/free-solid-svg-icons'
 
 import { Link } from 'react-scroll'
 
@@ -55,10 +54,11 @@ const NavBar = () => {
     <>
 
       <div className={clase}>
+        {clicked ? <FontAwesomeIcon icon={ faClose } className="bar-icon" onClick={handleNavbarClicked} />
+        : <FontAwesomeIcon icon={faBars} className="bar-icon" onClick={handleNavbarClicked} />}
         <button onClick={handleClick}>
           <FontAwesomeIcon icon={faDownload} /> Descargar CV
         </button>
-        <FontAwesomeIcon icon={faBars} className="bar-icon" onClick={handleNavbarClicked} />
         <ul>
           <li>
             <Link onClick={ handleNavbarClicked } activeClass='nav-active' smooth spy to="home">

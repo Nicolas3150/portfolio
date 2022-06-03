@@ -21,6 +21,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: start;
+    cursor: pointer;
 }
 
 
@@ -77,4 +78,18 @@
 .property-card:hover .property-image {
     height: 85%;
     background-position: center;
+}
+
+@media (max-width: 767px){
+    .property-card .property-description h4{
+        font-size: large;
+    }
+    .property-card .property-description p{
+        font-size: medium;
+    }
+}
+@media (max-width: 375px){
+    .property-description .title-git .icon{
+        position:inherit;
+    }
 }

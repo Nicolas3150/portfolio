@@ -49,8 +49,8 @@
 
 .bar-icon{
     display: none;
-    color: #FFFFFF;
-    font-size: 24px;
+    color: rgba(255,255,255,.5);
+    font-size: 20px;
 }
 
 @media (min-width: 768px){
@@ -75,7 +75,7 @@
     }
     .navbar{
         max-width: 250px;
-        height: 90%;
+        height: 100%;
         display: flex;
         flex-direction: column-reverse;
         position: absolute;
@@ -89,6 +89,7 @@
     }
     .navbar button{
        margin-left: 0;
+       margin-bottom: calc(30%);
     }
     .navbar.active{
        position: fixed;

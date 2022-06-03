@@ -1,0 +1,25 @@
+.portfolio{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio h2{
+    margin-top: 75px;
+    font-size: calc(1.5rem + 1.5vw);
+}
+.portfolio .p{
+    font-size: large;
+    max-width: 500px;
+    margin: 20px 0;
+}
+.proyects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 972px;
+}

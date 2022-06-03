@@ -1,0 +1,69 @@
+.Home {
+    height: auto;
+    min-height: 100vh;
+    z-index: 10;
+}
+
+.myInfo {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #FFFFFF;
+}
+
+.Home .myInfo img {
+    height: calc(8rem + 8vw);
+    width: calc(8rem + 8vw);
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+}
+
+.Home .myInfo h1 {
+    font-size: calc(1rem + 1vw);
+    font-weight: bold;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 23ch;
+
+    animation: typing 2s steps(23), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.Home .myInfo h1 .name {
+    color: #0A8BE8;
+    text-decoration: underline;
+}
+
+.Home .myInfo h2 {
+    font-size: calc(1.8rem + 1.8vw);
+    font-weight: bold;
+    text-align: center;
+}
+
+.Home .myInfo h3 {
+    font-size: calc(0.6rem + 0.6vw);
+    color: rgba(255, 255, 255, .7);
+    font-weight: none;
+    text-align: center;
+    padding: 1vw;
+}
+
+@media (max-width: 425px){
+
+}

@@ -1,0 +1,105 @@
+.contact {
+    height: auto;
+    min-height: 100vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 75px;
+}
+
+.contact h2 {
+    margin-top: 75px;
+    font-size: calc(1.5rem + 1.5vw);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario div label {
+    padding: 5px 12px;
+    font-size: large;
+}
+
+.formulario div input {
+    background-color: rgba(0, 17, 34, .3);
+    color: #FFFFFF;
+    padding: 8px 12px;
+    min-width: 250px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.formulario div textarea {
+    resize: none;
+    background-color: rgba(0, 17, 34, .3);
+    color: white;
+    border-radius: 10px;
+    padding: 8px 12px;
+    height: 150px;
+    min-width: 250px;
+    font-size: 16px;
+}
+
+.formulario div span {
+    color: #FFB800;
+    font-size: medium;
+    padding: 0 12px;
+    min-width: 250px;
+}
+
+.formulario button {
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    padding: 5px 100px;
+    margin-top: 20px;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    background: #000911;
+    align-self: center;
+}
+
+.formulario button:hover {
+    color: #000911;
+    background-color: #FFFFFF;
+    border-color: #000911;
+}
+
+@media (max-width: 550px){
+    .formulario{
+        width: 75%;
+    }
+}
+
+@media (max-width: 375px){
+    .formulario{
+        width: 80%;
+    }
+    .formulario div input{
+        min-width: 200px;
+    }
+    .formulario div textarea{
+        min-width: 200px;
+    }
+    .formulario button{
+        padding: 5px 50px;
+    }
+}
